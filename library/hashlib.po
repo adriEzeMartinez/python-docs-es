@@ -1,25 +1,27 @@
 # Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# Maintained by the python-doc-es workteam. 
+# Maintained by the python-doc-es workteam.
 # docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
 # Check https://github.com/PyCampES/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-06 11:59-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-06-26 18:50-0300\n"
 "Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../Doc/library/hashlib.rst:2
 msgid ":mod:`hashlib` --- Secure hashes and message digests"
-msgstr ""
+msgstr ":mod:'hashlib' --- Secure hashes y message digest"
 
 #: ../Doc/library/hashlib.rst:10
 msgid "**Source code:** :source:`Lib/hashlib.py`"
@@ -34,22 +36,33 @@ msgid ""
 "hash\" and \"message digest\" are interchangeable.  Older algorithms were "
 "called message digests.  The modern term is secure hash."
 msgstr ""
+"Este módulo implementa una interfaz común para muchos algoritmos de message "
+"digest y secure hash diferentes.  Se incluyen los algoritmos secure hash "
+"FIPS SHA1, SHA224, SHA256, SHA384 y SHA512 (definidos en FIPS 180-2), así "
+"como el algoritmo MD5 de RSA (definido en Internet:rfc:'1321').  Los "
+"términos “secure hash\" y “message digest” son intercambiables.  Los "
+"algoritmos más antiguos se llamaban message digest.  El término moderno es "
+"secure hash."
 
 #: ../Doc/library/hashlib.rst:32
 msgid ""
 "If you want the adler32 or crc32 hash functions, they are available in the :"
 "mod:`zlib` module."
 msgstr ""
+"Si desea las funciones hash adler32 o crc32, están disponibles en el módulo :"
+"mod:'zlib'."
 
 #: ../Doc/library/hashlib.rst:37
 msgid ""
 "Some algorithms have known hash collision weaknesses, refer to the \"See also"
 "\" section at the end."
 msgstr ""
+"Algunos algoritmos han conocido debilidades de colisión de hash, consulte la "
+"sección \"Ver también\" al final."
 
 #: ../Doc/library/hashlib.rst:44
 msgid "Hash algorithms"
-msgstr ""
+msgstr "Algoritmos hash"
 
 #: ../Doc/library/hashlib.rst:46
 msgid ""
@@ -61,18 +74,31 @@ msgid ""
 "`digest` of the concatenation of the data fed to it so far using the :meth:"
 "`digest` or :meth:`hexdigest` methods."
 msgstr ""
+"Hay un método constructor denominado para cada tipo de :dfn:'hash'.  Todos "
+"devuelven un objeto hash con la misma interfaz simple. Por ejemplo: utilice :"
+"func:'sha256' para crear un objeto hash SHA-256. Ahora puede usar este "
+"objeto con :term:'bytes-como objetos <bytes-like object=\"\">' (normalmente :"
+"class:'bytes') utilizando el método :meth:'update'. En cualquier momento se "
+"puede pedir el :dfn:'digest' de la concatenación de los datos que se le han "
+"alimentado hasta ahora utilizando los métodos :meth:'digest' o :"
+"meth:'hexdigest'.</bytes-like>."
 
 #: ../Doc/library/hashlib.rst:56
 msgid ""
 "For better multithreading performance, the Python :term:`GIL` is released "
 "for data larger than 2047 bytes at object creation or on update."
 msgstr ""
+"Para un mejor rendimiento multithreading, el Python term :’GIL' es liberado "
+"para datos de más de 2047 bytes en la creación de objetos o en la "
+"actualización."
 
 #: ../Doc/library/hashlib.rst:61
 msgid ""
 "Feeding string objects into :meth:`update` is not supported, as hashes work "
 "on bytes, not on characters."
 msgstr ""
+"No se admite la alimentación de objetos de cadena 'update', ya que los "
+"hashes funcionan en bytes, no en caracteres."
 
 #: ../Doc/library/hashlib.rst:66
 msgid ""
